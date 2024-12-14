@@ -1,6 +1,6 @@
-import { ParallaxLayer, Parallax } from "@react-spring/parallax";
+import { ParallaxLayer } from "@react-spring/parallax";
 
-const Details = ({ offset, parallaxRef }: propsType) => {
+const Details = ({ offset }: propsType) => {
   return (
     <ParallaxLayer offset={offset} speed={0.2} id="services">
       <div className="w-full flex justify-end">
