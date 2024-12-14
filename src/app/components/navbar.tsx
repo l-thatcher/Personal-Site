@@ -10,24 +10,27 @@ type propsType = {
 const Navbar = ({ parallaxRef }: propsType) => {
   return (
     <div>
-      <nav className="hidden sticky -top-1 bg-[#232E4D] md:flex flex-col">
+      <nav className="hidden fixed w-full z-[1000] bg-[#272c49] md:flex flex-col">
         <div className="container mx-auto h-20">
           <ul className="flex items-center justify-around h-full">
             <li>
               <p
-                onClick={() => parallaxRef.current?.scrollTo(1.4)} // Optional chaining to avoid errors
+                onClick={() => parallaxRef.current?.scrollTo(0.9)} // Optional chaining to avoid errors
                 className="text-white text-md font-w300"
               >
                 About Me
               </p>
             </li>
             <li>
-              <Link href="#portfolio" className="text-white text-md font-w300">
-                portfolio
-              </Link>
+              <p
+                onClick={() => parallaxRef.current?.scrollTo(1.5)} // Optional chaining to avoid errors
+                className="text-white text-md font-w300"
+              >
+                What I do
+              </p>
             </li>
             <li>
-              <Link href="#home">
+              <Link href="/">
                 <Image
                   className=""
                   priority

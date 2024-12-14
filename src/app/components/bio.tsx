@@ -13,7 +13,6 @@ const Bio = ({ offset }: propsType) => {
       <div className="flex justify-center" id="bio">
         <Image
           className=""
-          priority
           src="/logos/logo-white.png"
           alt="logo"
           height={200}
@@ -41,7 +40,7 @@ const Bio = ({ offset }: propsType) => {
       <div className="bg-[#272B4A] md:py-20">
         <div className="container mx-auto">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-5xl text-white py-10">what we do</h1>
+            <h1 className="text-5xl text-white py-10">what I do</h1>
 
             <div className="flex flex-col md:flex-row justify-around w-full px-4 md:px-20">
               <div className="flex flex-col items-center justify-center w-full md:w-1/4 h-2/3">
