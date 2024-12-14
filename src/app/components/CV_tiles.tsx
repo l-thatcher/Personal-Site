@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { RefObject } from "react"; // Correct import for the ref type
+import { RefObject } from "react";
 
 type propsType = {
-  parallaxRef: RefObject<IParallax | null>; // Correct type for the ref
+  parallaxRef: RefObject<IParallax | null>;
 };
+
 const CVTiles = ({ parallaxRef }: propsType) => {
   return (
     <>
