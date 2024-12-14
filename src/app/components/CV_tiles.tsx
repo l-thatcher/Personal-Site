@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { RefObject } from "react"; // Correct import for the ref type
+
 type propsType = {
   parallaxRef: RefObject<IParallax | null>; // Correct type for the ref
 };
