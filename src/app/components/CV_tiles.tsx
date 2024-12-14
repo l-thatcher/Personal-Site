@@ -1,5 +1,7 @@
 import Image from "next/image";
-
+type propsType = {
+  parallaxRef: RefObject<IParallax | null>; // Correct type for the ref
+};
 const CVTiles = ({ parallaxRef }: propsType) => {
   return (
     <>
