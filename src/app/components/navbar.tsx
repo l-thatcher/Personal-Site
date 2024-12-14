@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import useRef from "react";
+import { RefObject } from "react"; // Correct import for the ref type
+import { IParallax } from "@react-spring/parallax";
 
 type propsType = {
-  parallaxRef: useRef<IParallax | null>;
+  parallaxRef: RefObject<IParallax | null>; // Correct type for the ref
 };
 
 const Navbar = ({ parallaxRef }: propsType) => {
@@ -12,12 +13,9 @@ const Navbar = ({ parallaxRef }: propsType) => {
       <nav className="hidden sticky -top-1 bg-[#232E4D] md:flex flex-col">
         <div className="container mx-auto h-20">
           <ul className="flex items-center justify-around h-full">
-            {/* <li>
-                  <p className="text-white text-md font-w200"  onClick={() => parallax.current.scrollTo(0.9)}>home</p>
-                </li> */}
             <li>
               <p
-                onClick={() => parallaxRef.current.scrollTo(1.4)}
+                onClick={() => parallaxRef.current?.scrollTo(1.4)} // Optional chaining to avoid errors
                 className="text-white text-md font-w300"
               >
                 About Me
@@ -28,7 +26,6 @@ const Navbar = ({ parallaxRef }: propsType) => {
                 portfolio
               </Link>
             </li>
-
             <li>
               <Link href="#home">
                 <Image
@@ -41,18 +38,12 @@ const Navbar = ({ parallaxRef }: propsType) => {
                 />
               </Link>
             </li>
-
             <li>
               <p className="text-white text-md font-w400">about</p>
             </li>
             <li>
               <p className="text-white text-md font-w400">contact</p>
             </li>
-            {/* <li>
-                  <Link href="/portfolio">
-                    <p className="text-white text-md font-w500">h47</p>
-                  </Link>
-                </li> */}
           </ul>
         </div>
       </nav>
