@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { ParallaxLayer } from "@react-spring/parallax";
 
 type propsType = {
   offset: number;

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ParallaxBanner } from "react-scroll-parallax";
 
 export default function HeroSection() {
