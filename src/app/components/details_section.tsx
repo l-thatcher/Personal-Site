@@ -1,5 +1,9 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 
+type propsType = {
+  offset: number;
+};
+
 const Details = ({ offset }: propsType) => {
   return (
     <ParallaxLayer offset={offset} speed={0.2} id="services">
