@@ -49,9 +49,7 @@ export default function Home() {
           <CVTiles parallaxRef={parallaxRef} />
         </ParallaxLayer>
 
-        <div className="hidden md:flex">
-          <Details offset={window.innerWidth < 768 ? 2 : 2.3} />
-        </div>
+        <Details offset={window.innerWidth < 768 ? 2 : 2.3} />
       </Parallax>
     </div>
   );
