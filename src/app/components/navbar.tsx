@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
+import useRef from "react";
 
 type propsType = {
-  parallaxRef: MutableRefObject<IParallax | null>;
+  parallaxRef: useRef<IParallax | null>;
 };
 
 const Navbar = ({ parallaxRef }: propsType) => {
