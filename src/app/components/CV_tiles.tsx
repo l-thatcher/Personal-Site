@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { RefObject } from "react";
+import { IParallax } from "@react-spring/parallax";
 
 type propsType = {
   parallaxRef: RefObject<IParallax | null>;
@@ -12,7 +13,7 @@ const CVTiles = ({ parallaxRef }: propsType) => {
         <div className=" w-[80vw] m-auto md:m-0 md:w-[40vw] h-screen flex flex-col justify-around items-center py-24">
           <div className="p-1">
             <div
-              onClick={() => parallaxRef.current.scrollTo(2.1)}
+              onClick={() => parallaxRef.current?.scrollTo(2.1)}
               className="flex flex-col items-center bg-white rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <Image
@@ -36,7 +37,7 @@ const CVTiles = ({ parallaxRef }: propsType) => {
 
           <div className="p-1">
             <div
-              onClick={() => parallaxRef.current.scrollTo(2.5)}
+              onClick={() => parallaxRef.current?.scrollTo(2.5)}
               className=" flex flex-col items-center bg-white rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <Image
@@ -60,7 +61,7 @@ const CVTiles = ({ parallaxRef }: propsType) => {
 
           <div className="p-1">
             <div
-              onClick={() => parallaxRef.current.scrollTo(3.2)}
+              onClick={() => parallaxRef.current?.scrollTo(3.2)}
               className=" flex flex-col items-center bg-white rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <Image
