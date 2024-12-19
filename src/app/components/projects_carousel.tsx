@@ -37,7 +37,7 @@ const ProjectCarousel = ({ offset }: propsType) => {
           // infiniteLoop={true}
           showStatus={false}
           showIndicators={true}
-          renderArrowPrev={(clickHandler, hasPrev) => {
+          renderArrowPrev={(clickHandler) => {
             return (
               <div
                 className={`absolute top-0 bottom-0 left-0 flex justify-center items-center p-3 opacity-30 hover:opacity-100 cursor-pointer z-20 text-white text-2xl`}
@@ -47,7 +47,7 @@ const ProjectCarousel = ({ offset }: propsType) => {
               </div>
             );
           }}
-          renderArrowNext={(clickHandler, hasNext) => {
+          renderArrowNext={(clickHandler) => {
             return (
               <div
                 className={`absolute top-0 bottom-0 right-0 flex justify-center items-center p-3 opacity-30 hover:opacity-100 cursor-pointer z-20 text-white text-2xl`}
