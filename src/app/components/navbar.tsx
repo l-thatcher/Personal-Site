@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { RefObject } from "react"; // Correct import for the ref type
+import { RefObject } from "react";
 import { IParallax } from "@react-spring/parallax";
 
 type propsType = {

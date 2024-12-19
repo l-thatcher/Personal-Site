@@ -9,6 +9,7 @@ import HeroSection from "./components/hero_section";
 import Bio from "./components/bio";
 import CVTiles from "./components/CV_tiles";
 import Details from "./components/details_section";
+import ProjectCarousel from "./components/projects_carousel";
 
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(0);
@@ -26,7 +27,7 @@ export default function Home() {
       <Navbar parallaxRef={parallaxRef} />
       <Parallax
         className="parallax"
-        pages={windowWidth < 768 ? 5 : 4}
+        pages={windowWidth < 768 ? 5 : 6}
         ref={parallaxRef}
       >
         <HeroSection />
@@ -60,6 +61,8 @@ export default function Home() {
         <div className="hidden md:flex">
           <Details offset={windowWidth < 768 ? 2 : 2.3} />
         </div>
+
+        <ProjectCarousel offset={4} />
       </Parallax>
     </div>
   );
