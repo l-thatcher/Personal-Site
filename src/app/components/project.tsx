@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { StaticImageData } from "next/image";
-
 interface ProjectProps {
   title: string;
   platform: string;

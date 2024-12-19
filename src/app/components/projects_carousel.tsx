@@ -2,7 +2,6 @@ import { ParallaxLayer } from "@react-spring/parallax";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
-import Link from "next/link";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 import Project from "./project";
