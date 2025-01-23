@@ -27,7 +27,7 @@ export default function Home() {
       <Navbar parallaxRef={parallaxRef} />
       <Parallax
         className="parallax"
-        pages={windowWidth < 768 ? 5 : 6}
+        pages={windowWidth < 768 ? 8 : 6}
         ref={parallaxRef}
       >
         <HeroSection />
