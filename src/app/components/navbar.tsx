@@ -46,7 +46,7 @@ const Navbar = ({ parallaxRef }: propsType) => {
                 onClick={() => parallaxRef.current?.scrollTo(2.1)} // Optional chaining to avoid errors
                 className="text-white text-md font-w300"
               >
-                What I&apos;'ve done
+                What I&apos;ve done
               </p>
             </li>
             <li>

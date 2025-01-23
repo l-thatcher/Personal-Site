@@ -32,9 +32,9 @@ export default function Home() {
       >
         <HeroSection />
 
-        <Bio offset={windowWidth < 768 ? 0.2 : 1} />
+        <Bio offset={windowWidth < 768 ? 0.3 : 1} />
 
-        <ParallaxLayer speed={0.5} offset={windowWidth < 768 ? 3 : 2}>
+        <ParallaxLayer speed={0.5} offset={windowWidth < 768 ? 3.1 : 2}>
           <div className="flex justify-center absolute">
             <Image
               className=""
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
         </ParallaxLayer>
 
-        <Details offset={windowWidth < 768 ? 3.2 : 2.3} />
+        <Details offset={windowWidth < 768 ? 3 : 2.3} />
 
         <ProjectCarousel offset={windowWidth < 768 ? 5.6 : 4} />
       </Parallax>
