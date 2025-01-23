@@ -28,7 +28,7 @@ const CVTiles = ({ parallaxRef }: propsType) => {
                   Work History
                 </h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  My working history and what I've been doing so far.
+                  My working history and what I&apos;ve been doing so far.
                 </p>
               </div>
             </div>
