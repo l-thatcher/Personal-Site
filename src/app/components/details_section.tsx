@@ -13,7 +13,7 @@ const Details = ({ offset }: propsType) => {
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Professional Experience
             </h2>
-            <h3 className="font-bold text-white text-center">
+            <h3 className="font-bold text-white text-center border-b-2 border-white pb-2 mb-2">
               Lead Web Designer & Developer <br />
               Hangar47 (Feb 2023 – Present)
             </h3>
@@ -40,7 +40,7 @@ const Details = ({ offset }: propsType) => {
               </li>
             </ul>
             <br />
-            <h3 className="font-bold text-white text-center">
+            <h3 className="font-bold text-white text-center border-b-2 border-white pb-2 mb-2">
               Founder & Developer <br />
               Shed61 (Aug 2022 – Present)
             </h3>
