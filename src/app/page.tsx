@@ -60,9 +60,9 @@ export default function Home() {
           </div>
         </ParallaxLayer>
 
-        <Details offset={windowWidth < 768 ? 2 : 2.3} />
+        <Details offset={windowWidth < 768 ? 4 : 2.3} />
 
-        <ProjectCarousel offset={windowWidth < 768 ? 3.9 : 4} />
+        <ProjectCarousel offset={windowWidth < 768 ? 6 : 4} />
       </Parallax>
     </div>
   );
