@@ -8,13 +8,14 @@ import Project from "./project";
 
 import pastWork from "../datasets/past_work";
 
-type propsType = {
-  offset: number; // Correct type for the ref
+type Props = {
+  offset: number;
 };
 
-const ProjectCarousel = ({ offset }: propsType) => {
+const ProjectCarousel = ({ offset }: Props) => {
   return (
     <div>
+      {/* Parallax background */}
       <ParallaxLayer offset={offset} speed={0} id="projects">
         <Image
           className="w-full"
@@ -34,49 +35,35 @@ const ProjectCarousel = ({ offset }: propsType) => {
         <Carousel
           showThumbs={false}
           autoPlay={false}
-          // infiniteLoop={true}
           showStatus={false}
           showIndicators={true}
-          renderArrowPrev={(clickHandler) => {
-            return (
-              <div
-                className={`absolute top-0 bottom-0 left-0 flex justify-center items-center p-3 opacity-30 hover:opacity-100 cursor-pointer z-20 text-white text-2xl`}
-                onClick={clickHandler}
-              >
-                <FaArrowCircleLeft />
-              </div>
-            );
-          }}
-          renderArrowNext={(clickHandler) => {
-            return (
-              <div
-                className={`absolute top-0 bottom-0 right-0 flex justify-center items-center p-3 opacity-30 hover:opacity-100 cursor-pointer z-20 text-white text-2xl`}
-                onClick={clickHandler}
-              >
-                <FaArrowCircleRight />
-              </div>
-            );
-          }}
+          infiniteLoop={true}
+          renderArrowPrev={(clickHandler) => (
+            <div
+              className="absolute top-0 bottom-0 left-0 flex justify-center items-center p-3 opacity-30 hover:opacity-100 cursor-pointer z-20 text-white text-2xl"
+              onClick={clickHandler}
+            >
+              <FaArrowCircleLeft />
+            </div>
+          )}
+          renderArrowNext={(clickHandler) => (
+            <div
+              className="absolute top-0 bottom-0 right-0 flex justify-center items-center p-3 opacity-30 hover:opacity-100 cursor-pointer z-20 text-white text-2xl"
+              onClick={clickHandler}
+            >
+              <FaArrowCircleRight />
+            </div>
+          )}
         >
-          <div>
-            <Project {...pastWork.paintingByNumbersData}></Project>
-          </div>
-
-          <div>
-            <Project {...pastWork.forestPilatesData}></Project>
-          </div>
+          {Object.values(pastWork).map((projectData, index) => (
+            <div key={index}>
+              <Project {...projectData} />
+            </div>
+          ))}
         </Carousel>
-
-        {/* <Link href={"#contact"} className="w-full flex justify-center md:mt-10">
-          <button
-            type="button"
-            className="w-[95%] md:w-1/3 mx-auto text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center"
-          >
-            get in touch
-          </button>
-        </Link> */}
       </ParallaxLayer>
     </div>
   );
 };
+
 export default ProjectCarousel;

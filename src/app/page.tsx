@@ -32,9 +32,9 @@ export default function Home() {
       >
         <HeroSection />
 
-        <Bio offset={windowWidth < 768 ? 0.4 : 1} />
+        <Bio offset={windowWidth < 768 ? 0.2 : 1} />
 
-        <ParallaxLayer speed={0.5} offset={windowWidth < 768 ? 4 : 2}>
+        <ParallaxLayer speed={0.5} offset={windowWidth < 768 ? 3 : 2}>
           <div className="flex justify-center absolute">
             <Image
               className=""
@@ -55,14 +55,14 @@ export default function Home() {
               : { start: 2.3, end: 2.8 }
           }
         >
-          <CVTiles parallaxRef={parallaxRef} />
+          <div className="hidden md:block">
+            <CVTiles parallaxRef={parallaxRef} />
+          </div>
         </ParallaxLayer>
 
-        <div className="hidden md:flex">
-          <Details offset={windowWidth < 768 ? 2 : 2.3} />
-        </div>
+        <Details offset={windowWidth < 768 ? 2 : 2.3} />
 
-        <ProjectCarousel offset={4} />
+        <ProjectCarousel offset={windowWidth < 768 ? 3.9 : 4} />
       </Parallax>
     </div>
   );
