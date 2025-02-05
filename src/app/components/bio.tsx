@@ -69,7 +69,7 @@ const Bio = ({ offset }: propsType) => {
                 <p className="text-white text-md text-center p-5">
                   {" "}
                   My backend expertise spans PHP, Python (with Flask), Java
-                  (utilizing Spring Boot), and C# development. I'm also
+                  (utilizing Spring Boot), and C# development. I&apos;m also
                   experienced with database management using SQL and have
                   explored blockchain development through Solidity.
                 </p>
@@ -93,9 +93,9 @@ const Bio = ({ offset }: propsType) => {
                 </p>
                 <p className="text-white text-md text-center p-5">
                   {" "}
-                  I'm proficient in Agile methodologies, implementing Scrum and
-                  Kanban frameworks to optimize team productivity. My approach
-                  emphasizes strong client relations and effective team
+                  I&apos;m proficient in Agile methodologies, implementing Scrum
+                  and Kanban frameworks to optimize team productivity. My
+                  approach emphasizes strong client relations and effective team
                   management, ensuring project success from conception to
                   delivery.
                 </p>
