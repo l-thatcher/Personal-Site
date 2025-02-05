@@ -21,8 +21,10 @@ const Bio = ({ offset }: propsType) => {
       </div>
       <div>
         <div className="text-center md:px-[30vw]">
-          <h2 className="text-3xl text-white">professional website</h2>
-          <h2 className="text-3xl text-white">and software development</h2>
+          <h1 className="text-4xl text-white">software engineer</h1>
+          <h2 className="text-2xl text-white">
+            full stack development | project managment
+          </h2>
           <p className="text-md text-white p-4">
             Software engineer with expertise in full-stack development, project
             management, and client relations. Skilled in creating bespoke
@@ -32,7 +34,7 @@ const Bio = ({ offset }: propsType) => {
             languages and technologies as they become available. I have a strong
             track record of delivering projects on time and exceeding client
             expectations. Adept at learning emerging technologies and employing
-            Agile methodologies for team and project management
+            Agile methodologies for team and project management.
           </p>
           <button className="rounded-full bg-slate-50 text-[#272B4A] p-2 text-md hover:bg-slate-300">
             get in touch
@@ -45,44 +47,68 @@ const Bio = ({ offset }: propsType) => {
             <h1 className="text-5xl text-white py-10">core skills</h1>
 
             <div className="flex flex-col md:flex-row justify-around w-full px-4 md:px-20">
-              <div className="flex flex-col items-center justify-center w-full md:w-1/4 h-2/3">
+              <div className="flex flex-col items-center justify-center w-full md:w-1/5 h-2/3">
                 <div className="w-20 h-20 my-10 rounded-full bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-green-300 via-blue-500 to-purple-600"></div>
                 <p className="text-white text-xl text-center">
-                  languages frameworks &<br /> web development
+                  Web Technologies
                 </p>
                 <p className="text-white text-md text-center md:p-5">
                   {" "}
-                  HTML, CSS, JavaScript, PHP, Python, Java, SQL, C#, Solidity,
-                  Firebase, Flask, Spring Boot, WordPress, Next.js, React,
-                  Tailwind, Bootstrap
+                  I specialize in front-end and back-end development using HTML,
+                  CSS, and JavaScript, with robust frameworks like React and
+                  Next.js. My web development toolkit includes Tailwind and
+                  Bootstrap for responsive design, ensuring elegant and
+                  functional user interfaces.
                 </p>
               </div>
-              <div className="flex flex-col items-center justify-center w-full md:w-1/4 h-2/3">
+              <div className="flex flex-col items-center justify-center w-full md:w-1/5 h-2/3">
+                <div className="w-20 h-20 rounded-full my-10 bg-gradient-to-t from-fuchsia-400 to-red-400"></div>
+                <p className="text-white text-xl text-center">
+                  Server-Side Languages
+                </p>
+                <p className="text-white text-md text-center p-5">
+                  {" "}
+                  My backend expertise spans PHP, Python (with Flask), Java
+                  (utilizing Spring Boot), and C# development. I'm also
+                  experienced with database management using SQL and have
+                  explored blockchain development through Solidity.
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center w-full md:w-1/5 h-2/3">
                 <div className="w-20 h-20 rounded-full my-10 bg-gradient-to-t from-orange-400 to-sky-400"></div>
                 <p className="text-white text-xl text-center">
                   mobile development
                 </p>
                 <p className="text-white text-md text-center p-5">
                   {" "}
-                  Flutter (ios and android)
+                  I use Flutter to create high-performance, visually appealing
+                  mobile applications for both iOS and Android platforms,
+                  ensuring seamless user experiences across devices.
                 </p>
               </div>
-              <div className="flex flex-col items-center justify-center w-full md:w-1/4 h-2/3">
+              <div className="flex flex-col items-center justify-center w-full md:w-1/5 h-2/3">
                 <div className="w-20 h-20 rounded-full my-10 bg-gradient-to-tl from-orange-500 viq-yellow-300 to-sky-200"></div>
                 <p className="text-white text-xl text-center">
                   project management
                 </p>
                 <p className="text-white text-md text-center p-5">
                   {" "}
-                  Agile, Kanban, Scrum, Client Relations, Team Management
+                  I'm proficient in Agile methodologies, implementing Scrum and
+                  Kanban frameworks to optimize team productivity. My approach
+                  emphasizes strong client relations and effective team
+                  management, ensuring project success from conception to
+                  delivery.
                 </p>
               </div>
-              <div className="flex flex-col items-center justify-center w-full md:w-1/4 h-2/3">
+              <div className="flex flex-col items-center justify-center w-full md:w-1/5 h-2/3">
                 <div className="w-20 h-20 rounded-full my-10 bg-gradient-to-r from-orange-400 to-rose-400"></div>
                 <p className="text-white text-xl text-center">tools</p>
                 <p className="text-white text-md text-center p-5">
                   {" "}
-                  Git, Jenkins, Docker, Adobe Suite
+                  My workflow integrates Git for version control, Jenkins for
+                  continuous integration, and Docker for containerization. I
+                  complement these technical tools with Adobe Suite for design
+                  and creative work.
                 </p>
               </div>
             </div>

@@ -1,9 +1,21 @@
 const pastWork = {
+  winterbothams: {
+    title: "Winterbothams",
+    description:
+      "I recently had the pleasure of using SquareSpace to redesign a Pilates website for a client, and the outcome exceeded expectations. By harnessing the platform's intuitive interface and a wide range of customizable templates, I transformed their outdated site into a visually captivating and user-friendly platform. The new design not only enhanced the aesthetics but also improved functionality, making it easier for visitors to navigate and explore the various Pilates offerings. The client was thrilled with the result as the revamped website attracted more visitors and ultimately led to an increase in client inquiries and business growth. SquareSpace proved to be an invaluable tool in helping me deliver exceptional results for my client's Pilates business.",
+    url: "https://winterbothams.co.uk/",
+  },
+  bar: {
+    title: "777Bar",
+    description:
+      "I recently had the pleasure of using SquareSpace to redesign a Pilates website for a client, and the outcome exceeded expectations. By harnessing the platform's intuitive interface and a wide range of customizable templates, I transformed their outdated site into a visually captivating and user-friendly platform. The new design not only enhanced the aesthetics but also improved functionality, making it easier for visitors to navigate and explore the various Pilates offerings. The client was thrilled with the result as the revamped website attracted more visitors and ultimately led to an increase in client inquiries and business growth. SquareSpace proved to be an invaluable tool in helping me deliver exceptional results for my client's Pilates business.",
+    url: "https://777bar.co.uk/",
+  },
   wyceGambia: {
     title: "WYCE Gambia NGO",
     description:
       "I recently had the pleasure of using SquareSpace to redesign a Pilates website for a client, and the outcome exceeded expectations. By harnessing the platform's intuitive interface and a wide range of customizable templates, I transformed their outdated site into a visually captivating and user-friendly platform. The new design not only enhanced the aesthetics but also improved functionality, making it easier for visitors to navigate and explore the various Pilates offerings. The client was thrilled with the result as the revamped website attracted more visitors and ultimately led to an increase in client inquiries and business growth. SquareSpace proved to be an invaluable tool in helping me deliver exceptional results for my client's Pilates business.",
-    url: "https://wycegambia.ngo/",
+    url: "https://wonderyearsint.com/",
   },
   paintingByNumbersData: {
     title: "painting by numbers",
