@@ -10,6 +10,7 @@ import Bio from "./components/bio";
 import CVTiles from "./components/CV_tiles";
 import Details from "./components/details_section";
 import ProjectCarousel from "./components/projects_carousel";
+import ContactSection from "./components/contact";
 
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(0);
@@ -21,20 +22,20 @@ export default function Home() {
   }, []);
 
   if (windowWidth === 0) return null; // Prevent rendering before windowWidth is set
-
+  console.log(windowWidth);
   return (
     <div>
       <Navbar parallaxRef={parallaxRef} />
       <Parallax
         className="parallax"
-        pages={windowWidth < 768 ? 8 : 6}
+        pages={windowWidth < 768 ? 7 : 5.5}
         ref={parallaxRef}
       >
         <HeroSection />
 
-        <Bio offset={windowWidth < 768 ? 0.3 : 1} />
+        <Bio offset={0.000539 * windowWidth + 0.067} />
 
-        <ParallaxLayer speed={0.5} offset={windowWidth < 768 ? 3.1 : 2}>
+        <ParallaxLayer speed={0.5} offset={-0.000847 * windowWidth + 3.464}>
           <div className="flex justify-center absolute">
             <Image
               className=""
@@ -49,20 +50,20 @@ export default function Home() {
 
         <ParallaxLayer
           speed={0}
-          sticky={
-            windowWidth < 768
-              ? { start: 3.7, end: 3.7 }
-              : { start: 2.3, end: 2.8 }
-          }
+          sticky={{
+            start: -0.000917 * windowWidth + 3.887,
+            end: -0.000917 * windowWidth + 4.3,
+          }}
         >
           <div className="hidden md:block">
             <CVTiles parallaxRef={parallaxRef} />
           </div>
         </ParallaxLayer>
 
-        <Details offset={windowWidth < 768 ? 3 : 2.3} />
+        <Details offset={-0.000539 * windowWidth + 3.3} />
 
-        <ProjectCarousel offset={windowWidth < 768 ? 5.6 : 4} />
+        <ProjectCarousel offset={-0.00123 * windowWidth + 6.1} />
+        <ContactSection offset={-0.00123 * windowWidth + 7.1} />
       </Parallax>
     </div>
   );

@@ -1,13 +1,23 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { RefObject } from "react";
 import { IParallax } from "@react-spring/parallax";
+import { useState, useEffect } from "react";
 
 type propsType = {
   parallaxRef: RefObject<IParallax | null>; // Correct type for the ref
 };
 
 const Navbar = ({ parallaxRef }: propsType) => {
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  // Update windowWidth on the client side
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, []);
+
   return (
     <div>
       <nav className="hidden fixed w-full z-[1000] bg-[#272c49] md:flex flex-col">
@@ -15,24 +25,28 @@ const Navbar = ({ parallaxRef }: propsType) => {
           <ul className="flex items-center justify-around h-full">
             <li>
               <p
-                onClick={() => parallaxRef.current?.scrollTo(0.9)} // Optional chaining to avoid errors
-                className="text-white text-md font-w300"
+                onClick={() =>
+                  parallaxRef.current?.scrollTo(0.000539 * windowWidth + 0.067)
+                }
+                className="text-white text-md font-w300 cursor-pointer"
               >
-                About Me
+                about me
               </p>
             </li>
             <li>
               <p
-                onClick={() => parallaxRef.current?.scrollTo(1.5)} // Optional chaining to avoid errors
-                className="text-white text-md font-w300"
+                onClick={() =>
+                  parallaxRef.current?.scrollTo(0.000539 * windowWidth + 0.45)
+                }
+                className="text-white text-md font-w300 cursor-pointer"
               >
-                What I do
+                core skills
               </p>
             </li>
             <li>
               <Link href="/">
                 <Image
-                  className=""
+                  className="cursor-pointer"
                   priority
                   src="/logos/logo-white.png"
                   alt="logo"
@@ -43,14 +57,18 @@ const Navbar = ({ parallaxRef }: propsType) => {
             </li>
             <li>
               <p
-                onClick={() => parallaxRef.current?.scrollTo(2.1)} // Optional chaining to avoid errors
-                className="text-white text-md font-w300"
+                onClick={() =>
+                  parallaxRef.current?.scrollTo(-0.00123 * windowWidth + 6)
+                } // Optional chaining to avoid errors
+                className="text-white text-md font-w300 cursor-pointer"
               >
-                What I&apos;ve done
+                what I&apos;ve done
               </p>
             </li>
             <li>
-              <p className="text-white text-md font-w400">contact</p>
+              <p className="text-white text-md font-w400 cursor-pointer">
+                contact
+              </p>
             </li>
           </ul>
         </div>
