@@ -66,8 +66,13 @@ const Navbar = ({ parallaxRef }: propsType) => {
               </p>
             </li>
             <li>
-              <p className="text-white text-md font-w400 cursor-pointer">
-                contact
+              <p
+                onClick={() =>
+                  parallaxRef.current?.scrollTo(-0.00123 * windowWidth + 7.1)
+                }
+                className="text-white text-md font-w400 cursor-pointer"
+              >
+                get in touch
               </p>
             </li>
           </ul>

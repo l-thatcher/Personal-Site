@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { ParallaxLayer } from "@react-spring/parallax";
+import Link from "next/link";
 
 type propsType = {
   offset: number;
@@ -36,9 +37,23 @@ const Bio = ({ offset }: propsType) => {
             expectations. Adept at learning emerging technologies and employing
             Agile methodologies for team and project management.
           </p>
-          <button className="rounded-full bg-slate-50 text-[#272B4A] p-2 text-md hover:bg-slate-300">
-            get in touch
-          </button>
+          <div className="">
+            <Link
+              href="https://www.linkedin.com/in/louis-thatcher-391739231/"
+              target="_blank"
+              className="text-white text-2xl hover:underline px-5"
+            >
+              LinkedIn
+            </Link>
+            <span className="text-white"> | </span>
+            <Link
+              href="https://github.com/l-thatcher"
+              target="_blank"
+              className="text-white text-2xl hover:underline px-5"
+            >
+              GitHub
+            </Link>
+          </div>
         </div>
       </div>
       <div className="bg-[#272B4A] md:py-20">

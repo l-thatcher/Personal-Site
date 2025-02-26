@@ -17,7 +17,11 @@ const ContactSection = ({ offset }: propsType) => {
       <div className="bg-[#272B4A] py-20" id="contact">
         <div className="container mx-auto">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-5xl text-white py-10">contact</h1>
+            <h3 className="text-5xl text-white">get in touch</h3>
+            <p className="text-white p-10">
+              Feel free to get in touch with me through email, instagram or
+              LinkedIn
+            </p>
 
             <div className="flex flex-wrap justify-center gap-8 px-4 md:px-20">
               {/* Instagram */}
@@ -42,7 +46,7 @@ const ContactSection = ({ offset }: propsType) => {
 
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/louis-thatcher-391739231/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 rounded-full bg-white hover:bg-gray-100 transition-colors duration-300"
