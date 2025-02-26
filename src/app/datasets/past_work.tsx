@@ -5,10 +5,16 @@ const pastWork = {
   //     "I crafted a clean, welcoming WordPress site for this New Forest storage provider using Divi, the design focus was on balancing picturesque farmstead charm with enterprise-grade security to create a welcoming site. The design highlights their rural setting with panoramic countryside visuals while showcasing 24/7 CCTV monitoring and personalized access systems. Built in just 3 weeks, the minimalist layout features straightforward pricing tables and client testimonials.",
   //   url: "https://lockitandleaveit.co.uk/",
   // },
+  CozyCab: {
+    title: "Cozy-Cab",
+    description:
+      "- work in progress - I worked closely with the client to design a WordPress site for their bespoke Land Rover Defender accessory. They wanted a modern design with earthy tones that reflected both the ruggedness of the Defender and the craftsmanship behind their product. I also integrated a WooCommerce store, allowing them to manage sales directly through the site.",
+    url: "https://cozy-cab.co.uk",
+  },
   physicsWithAlice: {
     title: "Physics With Alice",
     description:
-      "I designed a WordPress site for this science tutor using warm, earthy tones to create an approachable hub for physics education. The content focuses on clearly presenting GCSE, A-Level, and IB support levels through concise, jargon-free explanations rather than complex navigation. A central qualifications section outlines each offering with simple bullet points and direct contact prompts, while muted geometric accents maintain academic professionalism. The client prioritised easy content updates to reflect syllabus changes and a mobile-first layout that keeps focus on Alice's teaching ethos – making physics accessible without overwhelming visual clutter.",
+      "- work in progress - I designed a WordPress site for this science tutor using warm, earthy tones to create an approachable hub for physics education. The content focuses on clearly presenting GCSE, A-Level, and IB support levels through concise, jargon-free explanations rather than complex navigation. A central qualifications section outlines each offering with simple bullet points and direct contact prompts, while muted geometric accents maintain academic professionalism. The client prioritised easy content updates to reflect syllabus changes and a mobile-first layout that keeps focus on Alice's teaching ethos – making physics accessible without overwhelming visual clutter.",
     url: "https://physicswithalice.com/",
   },
   straightEightLogistics: {

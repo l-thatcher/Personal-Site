@@ -18,7 +18,7 @@ const ContactSection = ({ offset }: propsType) => {
         <div className="container mx-auto">
           <div className="flex flex-col items-center justify-center">
             <h3 className="text-5xl text-white">get in touch</h3>
-            <p className="text-white p-10">
+            <p className="text-white p-10 text-center">
               Feel free to get in touch with me through email, instagram or
               LinkedIn
             </p>

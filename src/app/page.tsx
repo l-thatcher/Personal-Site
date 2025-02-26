@@ -22,20 +22,19 @@ export default function Home() {
   }, []);
 
   if (windowWidth === 0) return null; // Prevent rendering before windowWidth is set
-  console.log(windowWidth);
   return (
     <div>
       <Navbar parallaxRef={parallaxRef} />
       <Parallax
         className="parallax"
-        pages={windowWidth < 768 ? 7 : 5.5}
+        pages={windowWidth < 768 ? 10.4 : 5.8}
         ref={parallaxRef}
       >
         <HeroSection />
 
-        <Bio offset={0.000539 * windowWidth + 0.067} />
+        <Bio offset={windowWidth < 768 ? 0.4 : 1} />
 
-        <ParallaxLayer speed={0.5} offset={-0.000847 * windowWidth + 3.464}>
+        <ParallaxLayer speed={0.5} offset={windowWidth < 768 ? 4.3 : 2.3}>
           <div className="flex justify-center absolute">
             <Image
               className=""
@@ -51,8 +50,8 @@ export default function Home() {
         <ParallaxLayer
           speed={0}
           sticky={{
-            start: -0.000917 * windowWidth + 3.887,
-            end: -0.000917 * windowWidth + 4.3,
+            start: 2.3,
+            end: 3,
           }}
         >
           <div className="hidden md:block">
@@ -60,10 +59,11 @@ export default function Home() {
           </div>
         </ParallaxLayer>
 
-        <Details offset={-0.000539 * windowWidth + 3.3} />
+        <Details offset={windowWidth < 768 ? 4.3 : 2.3} />
 
-        <ProjectCarousel offset={-0.00123 * windowWidth + 6.1} />
-        <ContactSection offset={-0.00123 * windowWidth + 7.1} />
+        <ProjectCarousel offset={windowWidth < 768 ? 7.8 : 4} />
+
+        <ContactSection offset={windowWidth < 768 ? 9.6 : 5.3} />
       </Parallax>
     </div>
   );

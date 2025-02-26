@@ -27,3 +27,16 @@ body {
 .parallax::-webkit-scrollbar {
   display: none;
 }
+
+.parallax-scrollbar {
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
+}
+
+@media (pointer: coarse) {
+  .parallax-layer {
+    transform: translateZ(0);
+    touch-action: pan-y;
+  }
+}
+

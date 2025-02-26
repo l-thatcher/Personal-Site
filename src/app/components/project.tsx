@@ -22,12 +22,12 @@ const Project = ({ title, description, url }: ProjectProps) => {
 
         {/* Iframe */}
         <div className="w-full">
-          <div className="w-full aspect-[16/9] overflow-hidden pt-8">
+          <div className="w-full aspect-[9/17] md:aspect-[16/9] overflow-hidden pt-8">
             <iframe
               src={url}
               title={title}
               allowFullScreen
-              className="!w-[150%] h-[150%] scale-[66.67%] aspect-[16/9] origin-top-left border-0 rounded-xl !m-0"
+              className="!w-full h-full border-0 rounded-xl !m-0 md:!w-[150%] md:h-[150%] md:scale-[66.67%] md:origin-top-left"
             ></iframe>
           </div>
         </div>
