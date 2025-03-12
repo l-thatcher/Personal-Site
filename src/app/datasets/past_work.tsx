@@ -5,6 +5,12 @@ const pastWork = {
   //     "I crafted a clean, welcoming WordPress site for this New Forest storage provider using Divi, the design focus was on balancing picturesque farmstead charm with enterprise-grade security to create a welcoming site. The design highlights their rural setting with panoramic countryside visuals while showcasing 24/7 CCTV monitoring and personalized access systems. Built in just 3 weeks, the minimalist layout features straightforward pricing tables and client testimonials.",
   //   url: "https://lockitandleaveit.co.uk/",
   // },
+  Elliotts: {
+    title: "Elliotts Of Lymington",
+    description:
+      "I worked closely with Elliots of Lymington to design and develop a bespoke website from the ground up. The site features a dynamic vertical scrolling timeline, brought to life through extensive JavaScript and CSS, and a new mega-menu designed to simplify user navigation, creating an engaging and interactive user experience. To support their business operations, I also integrated Stripe for seamless online payments, ensuring a smooth and secure checkout process.",
+    url: "https://elliottsoflymington.com",
+  },
   CozyCab: {
     title: "Cozy-Cab",
     description:
