@@ -35,12 +35,12 @@ const pastWork = {
       "I modernized this established company's WordPress site through backend optimizations for faster loading and reliable content updates, alongside a refreshed frontend design. The overhaul streamlined their CMS for effortless team edits while enhancing visual appeal with cleaner layouts and improved mobile responsiveness. Client priorities included maintaining brand consistency during the transition and ensuring seamless functionality across service documentation portals.",
     url: "https://winterbothams.co.uk/",
   },
-  bar: {
-    title: "777Bar",
-    description:
-      "I built this motorcycle-themed cafe website from scratch with Wordpress and Divi, emphasizing an adventure-bike inspired aesthetic through striking full-screen photography of bikes, food, and the cafe/bar. The design balances rugged character with modern clarity – using clear typography for menu headers and easy-access gallery grids for event highlights. Client priorities included showcasing their community vibe through visuals while ensuring clear presentation of menu items and drinks available",
-    url: "https://777bar.co.uk/",
-  },
+  // bar: {
+  //   title: "777Bar",
+  //   description:
+  //     "I built this motorcycle-themed cafe website from scratch with Wordpress and Divi, emphasizing an adventure-bike inspired aesthetic through striking full-screen photography of bikes, food, and the cafe/bar. The design balances rugged character with modern clarity – using clear typography for menu headers and easy-access gallery grids for event highlights. Client priorities included showcasing their community vibe through visuals while ensuring clear presentation of menu items and drinks available",
+  //   url: "https://777bar.co.uk/",
+  // },
   wyceGambia: {
     title: "WYCE Gambia NGO",
     description:
